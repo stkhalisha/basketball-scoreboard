@@ -1,0 +1,116 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #bd5734;
+  font-family: "Tilt Warp", cursive;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.home-score,
+.guest-score {
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  background: #080001;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 7rem;
+  text-align: center;
+  color: #f94f6d;
+  margin: 2rem 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  width: 3rem;
+  height: 3rem;
+  background: none;
+  font-family: "Cursed Timer ULiL";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: none;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  transition: 1s ease;
+}
+
+button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
+  transform: translateY(-0.5em);
+  background-color: black;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+}
